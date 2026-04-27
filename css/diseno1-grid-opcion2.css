@@ -1,0 +1,26 @@
+.contenedor-principal{
+    max-width: 1440px;
+    margin: auto;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 900px;
+}
+header{
+    height: 350px;
+    background-color: aqua;
+}
+footer{
+    height: 50px;
+    background-color: aquamarine;
+}
+nav{
+    background-color: beige;
+}
+main{
+    background-color: cadetblue;
+}
+.login{
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,18 @@
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+}
+/*mismas caracteristicas a los contenedores de imagenes*/
+.contenedor-img{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 50vh;
+}
+.contenedor-info{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    height: 100vh;
+}
+header{height: 25vh;}
+nav{height: 15vh;}
+footer{height: 10vh;}

@@ -1,0 +1,28 @@
+.contenedor-principal{
+    max-width: 1440px;
+    margin: auto;
+}
+.contenedor{
+    display: flex;
+    height: 900px;
+}
+header{
+    height: 350px;
+    background-color: aqua;
+}
+footer{
+    height: 50px;
+    background-color: aquamarine;
+}
+nav{
+    background-color: beige;
+    width: 25%;
+}
+main{
+    background-color: cadetblue;
+    width: 50%;
+}
+.login{
+    background-color: cornflowerblue;
+    width: 25%;
+}

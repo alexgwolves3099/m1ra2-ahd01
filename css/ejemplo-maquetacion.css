@@ -1,0 +1,27 @@
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+        "enc enc enc enc enc enc enc"
+        "nav nav nav nav nav nav nav"
+        "img1 img2 img3 img4 img5 img6 img7"
+        "cont cont cont cont cont login login"
+        "img8 img9 img10 img11 img12 img13 img14"
+        "pie pie pie pie pie pie pie";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 25vh 15vh 50vh 100vh 50vh 10vh;
+}
+header{
+    grid-area: enc;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: cont;
+}
+aside{
+    grid-area: login;
+}
+footer{
+    grid-area: pie;
+}

@@ -1,0 +1,33 @@
+.contenedor{
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "encabezado encabezado encabezado"
+        "menu contenido login"
+        "pie pie pie";
+        /*ancho=grid template columns*/
+    grid-template-columns: 1fr 2fr 1fr;
+        /*alto=grid template rows*/
+    grid-template-rows: 350px 900px 50px;
+}
+header{
+    grid-area: encabezado;
+    background-color: chartreuse;
+}
+nav{
+    grid-area: menu;
+    background-color: aquamarine;
+}
+main{
+    grid-area: contenido;
+    background-color: burlywood;
+}
+.login{
+    grid-area: login;
+    background-color: beige;
+}
+footer{
+    grid-area: pie; 
+    background-color: bisque;
+}   
