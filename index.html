@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Proyectos - Alexander</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            padding-bottom: 3rem;
+        }
+
+        .hero-section {
+            background: var(--primary-gradient);
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            background: var(--glass-bg);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: var(--card-shadow);
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .btn-custom {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+            border-radius: 12px;
+            padding: 0.6rem 1.5rem;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .btn-custom:hover {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .badge-category {
+            background: rgba(99, 102, 241, 0.1);
+            color: #6366f1;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-text {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Micro-animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-2">Mi Portafolio Web</h1>
+            <p class="lead opacity-75">Explora las maquetaciones y diseños creados en este proyecto</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Card: Diseño Flex -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="card-icon"><i class="bi bi-layout-sidebar-inset"></i></div>
+                        <span class="badge-category mb-3 align-self-center">Layout</span>
+                        <h5 class="card-title fw-bold">Diseño Flexbox</h5>
+                        <p class="card-text text-muted flex-grow-1">Estructura fluida utilizando el modelo de caja
+                            flexible.</p>
+                        <a href="diseno1-flex.html" class="btn btn-custom mt-3">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Diseño Grid -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="card-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                        <span class="badge-category mb-3 align-self-center">Grid</span>
+                        <h5 class="card-title fw-bold">Diseño Grid</h5>
+                        <p class="card-text text-muted flex-grow-1">Maquetación avanzada basada en CSS Grid Layout.</p>
+                        <a href="diseno1-grid.html" class="btn btn-custom mt-3">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Diseño Grid Opción 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="card-icon"><i class="bi bi-columns-gap"></i></div>
+                        <span class="badge-category mb-3 align-self-center">Grid</span>
+                        <h5 class="card-title fw-bold">Grid Alternativo</h5>
+                        <p class="card-text text-muted flex-grow-1">Variante del diseño grid con una estructura
+                            optimizada.</p>
+                        <a href="diseno1-grid-opcion2.html" class="btn btn-custom mt-3">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Ejemplo Maquetación -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="card-icon"><i class="bi bi-window-stack"></i></div>
+                        <span class="badge-category mb-3 align-self-center">Componentes</span>
+                        <h5 class="card-title fw-bold">Base de Maquetación</h5>
+                        <p class="card-text text-muted flex-grow-1">Ejemplo inicial de distribución de elementos en la
+                            página.</p>
+                        <a href="ejemplo-maquitacion.html" class="btn btn-custom mt-3">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Maquetación Combinada -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="card-icon"><i class="bi bi-layers-half"></i></div>
+                        <span class="badge-category mb-3 align-self-center">Híbrido</span>
+                        <h5 class="card-title fw-bold">Diseño Combinado</h5>
+                        <p class="card-text text-muted flex-grow-1">Integración de múltiples técnicas de
+                            posicionamiento.</p>
+                        <a href="ejemplo-maquitacion-combinado.html" class="btn btn-custom mt-3">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Maquetación Forma 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="card-icon"><i class="bi bi-palette-fill"></i></div>
+                        <span class="badge-category mb-3 align-self-center">Estilo</span>
+                        <h5 class="card-title fw-bold">Variante Estética</h5>
+                        <p class="card-text text-muted flex-grow-1">Tercera iteración del diseño centrado en la
+                            visualización dinámica.</p>
+                        <a href="ejemplo-maquitacion-forma3.html" class="btn btn-custom mt-3">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="mt-5 pt-4 text-center border-top">
+            <p class="footer-text mb-0">&copy; 2026 Panel de Proyectos • Alexander</p>
+    </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
